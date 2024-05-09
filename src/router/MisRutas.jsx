@@ -14,8 +14,8 @@ export const MisRutas = () => {
 
    
           <Routes>
-              <Route path="/" element={<Navigate to={"/inicio"}></Navigate>}></Route>
-              <Route path="inicio" element={<Inicio></Inicio>}></Route>
+              <Route path="/" element={<Inicio></Inicio>}></Route>
+              <Route path="/inicio" element={<Inicio></Inicio>}></Route>
               <Route path="/proyectos/:id" element={<Proyectos></Proyectos>}></Route>
               <Route path='*' element={<Error></Error>}></Route>
           </Routes>
