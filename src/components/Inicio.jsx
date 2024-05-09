@@ -91,8 +91,9 @@ export const Inicio = () => {
           <div className={`lg:flex lg:items-center lg:w-auto ${nav ? '' : 'hidden'}`} id="menu">
             <ul className="flex space-x-4 text-white">
               <li><a href="#inicio"  >Inicio</a></li>
-              <li><a href="#portafolio"  >Portafolio</a></li>
-              <li><NavLink to="/portafolio/public/francisco-alfaro.pdf" rel="noreferrer" target='_blank '>CV</NavLink></li>
+              <li><a href="#portafolio">Portafolio</a></li>
+              <li><a href="#servicios">servicios</a></li>
+              <li><NavLink to="/public/francisco-alfaro.pdf" rel="noreferrer" target='_blank '>CV</NavLink></li>
               <li><a href="#contacto"  >Contacto</a></li>
             </ul>
           </div>
