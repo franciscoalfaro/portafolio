@@ -92,7 +92,7 @@ export const Inicio = () => {
             <ul className="flex space-x-4 text-white">
               <li><a href="#inicio"  >Inicio</a></li>
               <li><a href="#portafolio"  >Portafolio</a></li>
-              <li><NavLink to="/public/francisco-alfaro.pdf" rel="noreferrer" target='_blank '>CV</NavLink></li>
+              <li><NavLink to="/francisco-alfaro.pdf" rel="noreferrer" target='_blank '>CV</NavLink></li>
               <li><a href="#contacto"  >Contacto</a></li>
             </ul>
           </div>
