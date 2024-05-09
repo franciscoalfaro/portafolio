@@ -5,7 +5,7 @@ export const Footer = () => {
 
     <footer id="descarga-cv" className="bg-gray-800 text-white py-8 px-4">
       <div className="container mx-auto flex justify-center items-center">
-        <p className="mr-4">&copy; 2024 - Todos los derechos reservados</p>
+        <p className="mr-4">&copy; {new Date().getFullYear()} - Todos los derechos reservados</p>
         <div className="flex items-center">
 
 
