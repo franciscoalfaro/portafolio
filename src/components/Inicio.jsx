@@ -7,26 +7,6 @@ import { trabajos } from '../data/trabajos'
 
 export const Inicio = () => {
 
-  const [theme, setTheme] = useState('ligth')
-  const [modoOsc, setModoOsc] = useState(false)
-
-  useEffect(() => {
-    if (theme === 'dark') {
-      document.querySelector('html').classList.add('dark')
-      setModoOsc(true)
-
-    } else {
-      document.querySelector('html').classList.remove('dark')
-      setModoOsc(false)
-
-
-    }
-  }, [theme])
-
-  const handleChangeTheme = () => {
-    setTheme(prevTheme => prevTheme === 'ligth' ? 'dark' : 'ligth')
-  }
-
   const [nav, setNav] = useState(false)
 
   const handleBotonNav = () => {
@@ -73,10 +53,11 @@ export const Inicio = () => {
   return (
 
 
-    <div className={`min-h-screen ${modoOsc ? 'dark:bg-gray-900 dark:text-white' : 'bg-gray-100'}`}>
+    <div className="min-h-screen bg-gray-100 dark:text-white dark:bg-gray-900">
       {/* Navbar */}
 
-      <nav className="bg-gray-800 dark:bg-slate-800 p-4">
+
+      <nav className="bg-gray-800 dark:bg-slate-800 p-4 border-black dark:border-white">
         <div className="container mx-auto flex justify-between items-center">
           <div>
             <a href="/" className="text-white font-semibold text-lg">Francisco Alfaro</a>
@@ -104,10 +85,10 @@ export const Inicio = () => {
 
 
       {/* Hero */}
-      <section id="inicio" className={`py-20 text-center ${modoOsc ? 'dark:text-white' : 'text-black'}`}>
+      <section id="inicio" className="py-20 dark:bg-gray-800 bg-gray-100">
         <div className="container mx-auto">
-          <h1 className="text-4xl font-bold mb-4">¡Bienvenido a mi Portafolio!</h1>
-          <p className="text-lg">Aquí encontrarás información sobre mis proyectos y servicios.</p>
+          <h1 className="text-4xl font-bold mb-4 dark:text-white">¡Bienvenido a mi Portafolio!</h1>
+          <p className="text-lg dark:text-white">Aquí encontrarás información sobre mis proyectos y servicios.</p>
         </div>
       </section>
       <hr></hr>
