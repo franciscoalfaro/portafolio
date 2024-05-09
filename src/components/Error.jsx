@@ -10,7 +10,7 @@ export const Error = () => {
       <p className='text-xl mt-4 dark:text-black'>Página Web No Encontrada</p>
       <div className='mt-8'>
         <Link
-          to="/inicio"
+          to="/portafolio"
           className="bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 text-white font-medium rounded-lg text-sm px-6 py-3 transition duration-300 ease-in-out"
         >
           Volver Atrás

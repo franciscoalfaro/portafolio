@@ -14,9 +14,9 @@ export const MisRutas = () => {
 
    
           <Routes>
-              <Route path="/" element={<Inicio></Inicio>}></Route>
-              <Route path="/inicio" element={<Inicio></Inicio>}></Route>
-              <Route path="/proyectos/:id" element={<Proyectos></Proyectos>}></Route>
+              <Route path="/portafolio" element={<Inicio></Inicio>}></Route>
+              <Route path="/portafolio/inicio" element={<Inicio></Inicio>}></Route>
+              <Route path="/portafolio/proyectos/:id" element={<Proyectos></Proyectos>}></Route>
               <Route path='*' element={<Error></Error>}></Route>
           </Routes>
 

@@ -92,7 +92,7 @@ export const Inicio = () => {
             <ul className="flex space-x-4 text-white">
               <li><a href="#inicio"  >Inicio</a></li>
               <li><a href="#portafolio"  >Portafolio</a></li>
-              <li><NavLink to="/francisco-alfaro.pdf" rel="noreferrer" target='_blank '>CV</NavLink></li>
+              <li><NavLink to="/portafolio/public/francisco-alfaro.pdf" rel="noreferrer" target='_blank '>CV</NavLink></li>
               <li><a href="#contacto"  >Contacto</a></li>
             </ul>
           </div>
@@ -118,10 +118,10 @@ export const Inicio = () => {
             {trabajos.map(trabajo => {
               return (
                 <div className="bg-gray-50 rounded-lg p-8 shadow-md p-6 dark:bg-gray-700" key={trabajo.id}>
-                  <img src={"/images/" + trabajo.id + ".png"} alt="Proyecto 1" className="w-full mb-4 rounded-lg"></img>
+                  <img src={"/portafolio/images/" + trabajo.id + ".png"} alt="Proyecto 1" className="w-full mb-4 rounded-lg"></img>
                   <h3 className="text-xl font-semibold mb-2 dark:text-gray-300">{trabajo.nombre}</h3>
                   <p className="text-gray-700 dark:text-gray-300">{trabajo.tecnologias}</p>
-                  <Link to={"/proyectos/" + trabajo.id} className="text-blue-500 hover:underline ">Ver más</Link>
+                  <Link to={"/portafolio/proyectos/" + trabajo.id} className="text-blue-500 hover:underline ">Ver más</Link>
                 </div>
               )
             })}
@@ -187,7 +187,7 @@ export const Inicio = () => {
       <section id="cv" className="py-20 dark:bg-gray-900 bg-gray-100">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8 dark:text-white text-black">Descarga mi CV</h2>
-          <a href="public/francisco-alfaro.pdf" rel="noreferrer" target='_blank' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Descargar CV</a>
+          <a href="/portafolio/public/francisco-alfaro.pdf" rel="noreferrer" target='_blank' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Descargar CV</a>
         </div>
       </section>
       <hr></hr>
