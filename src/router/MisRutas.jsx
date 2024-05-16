@@ -5,10 +5,13 @@ import { Inicio } from '../components/Inicio';
 import { Footer } from '../components/Footer';
 import { Error } from '../components/Error';
 import { Proyectos } from '../components/Proyectos';
+import { Nav } from '../components/Nav';
 
 export const MisRutas = () => {
   return (
     <BrowserRouter>
+    <Nav></Nav>
+    <hr></hr>
 
         {/* contenido central */}
 
