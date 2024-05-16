@@ -4,10 +4,12 @@ import { useForm } from '../hooks/useForm'
 import { SerializeForm } from '../helpers/SerializeForm'
 import { Global } from '../helpers/Global'
 import { trabajos } from '../data/trabajos'
+import { servicios } from '../data/servicios'
 
 export const Inicio = () => {
 
   const [nav, setNav] = useState(false)
+
 
   const handleBotonNav = () => {
     setNav(!nav)
@@ -74,7 +76,7 @@ export const Inicio = () => {
               <li><a href="#inicio"  >Inicio</a></li>
               <li><a href="#portafolio">Portafolio</a></li>
               <li><a href="#servicios">servicios</a></li>
-              <li><NavLink to="/portafolio/francisco-alfaro.pdf" rel="noreferrer" target='_blank '>CV</NavLink></li>
+              <li><NavLink to="/francisco-alfaro.pdf" rel="noreferrer" target='_blank '>CV</NavLink></li>
               <li><a href="#contacto"  >Contacto</a></li>
             </ul>
           </div>
@@ -92,6 +94,7 @@ export const Inicio = () => {
         </div>
       </section>
       <hr></hr>
+
       {/* Portafolio */}
       <section id="portafolio" className='py-20 dark:bg-gray-800 bg-gray-100'>
         <div id="portafolio" className="container mx-auto py-8">
@@ -99,18 +102,18 @@ export const Inicio = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {trabajos.map(trabajo => {
               return (
-                <div className="bg-gray-50 rounded-lg p-8 shadow-md p-6 dark:bg-gray-700" key={trabajo.id}>
-                  <img src={"/portafolio/images/" + trabajo.id + ".png"} alt="Proyecto 1" className="w-full mb-4 rounded-lg"></img>
+                <div className="bg-gray-50 rounded-lg p-8 shadow-md p-6 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:scale-105" key={trabajo.id}>
+                  <img src={"/images/" + trabajo.id + ".png"} alt="Proyecto 1" className="w-full mb-4 rounded-lg"></img>
                   <h3 className="text-xl font-semibold mb-2 dark:text-gray-300">{trabajo.nombre}</h3>
                   <p className="text-gray-700 dark:text-gray-300">{trabajo.tecnologias}</p>
-                  <Link to={"/portafolio/proyectos/" + trabajo.id} className="text-blue-500 hover:underline ">Ver más</Link>
+                  <Link to={"/proyectos/" + trabajo.id} className="text-blue-500 hover:underline ">Ver más</Link>
                 </div>
               )
             })}
-
           </div>
         </div>
       </section>
+
       <hr></hr>
 
       {/* Servicios */}
@@ -118,11 +121,13 @@ export const Inicio = () => {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 dark:text-white text-black">Servicios</h2>
           {/* Aquí puedes listar tus servicios */}
-          <ul className="text-lg dark:text-white text-gray-700">
-            <li>Diseño y Desarrollo Web</li>
-            <li>Desarrollo de Aplicaciones Móviles</li>
-            <li>Consultoría en Tecnologías de la Información</li>
-          </ul>
+          {servicios.map(servicio => (
+            <div key={servicio.id}>
+              <ul className="text-lg dark:text-white text-gray-700">
+                <li>{servicio.nombre}</li>
+              </ul>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -169,7 +174,7 @@ export const Inicio = () => {
       <section id="cv" className="py-20 dark:bg-gray-900 bg-gray-100">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8 dark:text-white text-black">Descarga mi CV</h2>
-          <a href="/portafolio/francisco-alfaro.pdf" rel="noreferrer" target='_blank' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Descargar CV</a>
+          <a href="/francisco-alfaro.pdf" rel="noreferrer" target='_blank' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Descargar CV</a>
         </div>
       </section>
       <hr></hr>
