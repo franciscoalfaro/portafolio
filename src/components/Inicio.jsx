@@ -71,18 +71,19 @@ export const Inicio = () => {
               </svg>
             </button>
           </div>
-          <div className={`lg:flex lg:items-center lg:w-auto ${nav ? '' : 'hidden'}`} id="menu">
-            <ul className="flex space-x-4 text-white">
-              <li><a href="#inicio"  >Inicio</a></li>
-              <li><a href="#portafolio">Portafolio</a></li>
-              <li><a href="#servicios">servicios</a></li>
-              <li><NavLink to="/francisco-alfaro.pdf" rel="noreferrer" target='_blank '>CV</NavLink></li>
-              <li><a href="#contacto"  >Contacto</a></li>
+          <div className={`lg:flex lg:items-center lg:w-auto ${nav ? 'block' : 'hidden'} lg:flex-col lg:items-start`} id="menu">
+            <ul className="flex flex-col lg:flex-row lg:space-x-4 lg:space-y-0 text-white lg:items-start">
+              <li><a href="#inicio" className="block lg:inline">Inicio</a></li>
+              <li><a href="#portafolio" className="block lg:inline">Portafolio</a></li>
+              <li><a href="#servicios" className="block lg:inline">Servicios</a></li>
+              <li><NavLink to="/francisco-alfaro.pdf" rel="noreferrer" target='_blank ' className="block lg:inline">CV</NavLink></li>
+              <li><a href="#contacto" className="block lg:inline">Contacto</a></li>
             </ul>
           </div>
         </div>
       </nav>
 
+      <hr></hr>
 
 
 
