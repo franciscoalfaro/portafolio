@@ -14,7 +14,7 @@ export const Nav = () => {
         <nav className="bg-gray-800 dark:bg-slate-800 p-4 border-black dark:border-white">
             <div className="container mx-auto flex justify-between items-center">
                 <div>
-                    <a href="/" className="text-white font-semibold text-lg">Francisco Alfaro</a>
+                    <a href="/" className="text-white font-semibold text-lg">FA</a>
                 </div>
                 <div className="lg:hidden">
                     <button id="menu-toggle" className="text-white focus:outline-none" onClick={handleBotonNav}>
