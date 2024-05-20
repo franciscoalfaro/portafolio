@@ -9,5 +9,5 @@
     strokeLinecap="round"
     strokeLinejoin="round"
 >
-    <text x="50%" y="50%" textAnchor="middle" fontSize="18" dy=".3em">FA</text>
+    <text x="20%" y="50%" textAnchor="middle" fontSize="18" dy=".3em">FA</text>
 </svg>
