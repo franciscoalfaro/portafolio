@@ -10,7 +10,7 @@ export const servicios = [
     },
     {
         'id': '3',
-        'nombre': 'Consultoría en Tecnologías de la Información',
+        'nombre': 'Desarrollo de API con tecnologia MERN',
 
     }
 
