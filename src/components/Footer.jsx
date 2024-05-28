@@ -4,9 +4,7 @@ export const Footer = () => {
   return (
 
 <div className="flex flex-col min-screen">
-  <section id="portafolio" className="flex-grow py-9 dark:bg-gray-800 bg-gray-300">
 
-  </section>
   <footer id="descarga-cv" className="bg-gray-800 text-white py-8 px-4">
     <div className="container mx-auto flex justify-center items-center">
       <p className="mr-4">&copy; {new Date().getFullYear()} - Todos los derechos reservados</p>
