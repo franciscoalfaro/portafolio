@@ -2,7 +2,8 @@ export const trabajos = [
     {
         'id':'redsocial',
         'nombre':'Red Social',
-        'url':'www.testsocial.org',
+        'url':'redsocial.pages.dev',
+        'url2':'www.testsocial.org',
         'tecnologias':'HTML, CSS ,JS, React, MERN',
         'categorias':'Desarrollo web',
         'descripcion':'Red Social desarrollada con MERN en back-end y Front-end Reactjs+Vite '
@@ -18,7 +19,7 @@ export const trabajos = [
     {
         'id':'blog',
         'nombre':'Blog',
-        'url':'blog-5x7.pages.dev/',
+        'url':'primerblog.pages.dev',
         'tecnologias':'HTML, CSS, JS , REACT',
         'categorias':'Desarrollo web',
         'descripcion':'Primer proyecto realizado, el cual corresponde a un blog personal'
