@@ -19,7 +19,7 @@ export const Nav = () => {
     }
     return (
 
-        <div className="bg-gray-800 dark:bg-slate-800 p-4 border-black dark:border-white">
+        <div className="bg-gray-800 dark:bg-slate-800 border-black dark:border-white">
             <nav className="flex items-center justify-between flex-wrap bg-teal p-6">
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
                     <a id='logo' href="/" className="font-semibold text-lg">FA</a>
