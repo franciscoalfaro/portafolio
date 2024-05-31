@@ -27,7 +27,7 @@ export const Contacto = () => {
 
             if (data.status === 'success') {
                 Swal.fire({ position: 'bottom-end', title: 'Correo de contacto enviado', showConfirmButton: false, timer: 800, });
-                const myForm = document.querySelector("#contacto");
+                const myForm = document.querySelector("#FomrContacto");
                 myForm.reset();
             } else {
                 setMessage(data.message);
@@ -52,7 +52,7 @@ export const Contacto = () => {
             <h2 className="text-3xl font-bold mb-8 dark:text-white text-black">
                 Contacto
             </h2>
-            <form id='contacto' onSubmit={contactoForm}>
+            <form id='FomrContacto' onSubmit={contactoForm}>
                 <div className="grid gap-6 mb-6 md:grid-cols-2">
                     <div>
                         <label htmlFor="nombre" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Nombre</label>
