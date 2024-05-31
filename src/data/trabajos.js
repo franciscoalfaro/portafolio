@@ -16,6 +16,10 @@ export const trabajos = [
                 'id': 2,
                 'name': 'social2'
             },
+            {
+                'id': 3,
+                'name': 'social3'
+            },
         ]
     },
     {
